@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.name {
+    font-size: 86px;
+    height: auto;
+    width: 500px;
+    color: #F4F4F4;
+    line-height: 150px;
+}
+
+
+.bar_1 {
+    color: #EE2560;
+    margin-bottom: 30px;
+    width: 140px;
+    size: 4;
+}
+
+.bar_2 {
+    color: #EE2560;
+    /* right: -150px; */
+    width: 170px;
+    margin: 20px 0 0 100px;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 220px;
+    top: 240px;
+    height: auto;
+    width: auto;
+}
+
+
+.container_hr {
+    margin: 20px 0 30px 20px;
+}
+
+.emploie {
+    position: relative;
+    font-size: 24px;
+    color: #F4F4F4;
+}
+
+.container_profil {
+    position: relative;
+    width: 600px; /* Largeur du conteneur */
+    height: 600px; /* Hauteur du conteneur */
+    top: 300px;
+    left: 60%;
+    background-color: burlywood;
+}
+
+.container_profil  div{
+    position: absolute;
+    border-radius: 90%;
+}
+
+#little_circle { 
+    height: 300px;
+    width: 300px;
+}
+
+#middle_circle { 
+    height: 200px;
+    width: 200px;
+}
+
+#big_circle { 
+    height: 100px;
+    width: 100px;
+}
+
+
+

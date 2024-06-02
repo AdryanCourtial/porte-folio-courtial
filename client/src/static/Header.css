@@ -1,0 +1,23 @@
+header {
+    background-color: rgba(217, 217, 217, 0.507);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    min-height: 5%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+header a {
+    color: #F4F4F4;
+    text-decoration: none;
+}
+
+header a :visited {
+    color: #F4F4F4;
+    text-decoration: none;
+}

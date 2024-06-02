@@ -1,0 +1,25 @@
+.profil {
+    height: 100%;
+    width: 100%;
+}
+
+#high_circle {
+    background-color: #45D9FD;
+    height: 500px;
+    width: 600px;
+    border-radius: 90%;
+}
+
+#middle_circle {
+    background-color: #808080;
+    height: 400px;
+    width: 400px;
+    border-radius: 90%;
+}
+
+#little_circle {
+    background-color: #EE2560;
+    height: 300px;
+    width: 300px;
+    border-radius: 90%;
+}
