@@ -12,14 +12,15 @@ header {
 }
 
 header button {
-    color: #F4F4F4;
+    color: black;
     text-decoration: none;
-    /* background-color: #45D9FD; */
+    background-color: #F4F4F4;
     padding: 10px;
-    border-radius: 90px;
+    border-radius: 20px;
+    border: none;
 }
 
 header button :visited {
-    color: #F4F4F4;
     text-decoration: none;
+    color: black;
 }
