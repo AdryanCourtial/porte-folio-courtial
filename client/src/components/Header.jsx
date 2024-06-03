@@ -1,13 +1,13 @@
 import './../static/Header.css'
 import { NavLink } from 'react-router-dom'
-import { PageHome } from './PageHome'
+import { motion } from 'framer-motion'
 
 export function Headers() {
     return (
     <header>
-        <NavLink to='/'> Home </NavLink>
-        <NavLink to='/competence'> Competence </NavLink>
-        <NavLink to='/contact'> Contact </NavLink>
+        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} ><NavLink to='/'> Home </NavLink></motion.button>
+        <motion.button><NavLink to='/competence'> Competence </NavLink></motion.button>
+        <motion.button><NavLink to='/contact'> Contact </NavLink></motion.button>
     </header>
     )
 }

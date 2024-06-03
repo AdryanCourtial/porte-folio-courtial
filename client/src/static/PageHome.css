@@ -10,7 +10,7 @@ main {
 
 
 .name {
-    font-size: 86px;
+    font-size: 78px;
     height: auto;
     width: 500px;
     color: #F4F4F4;
@@ -36,8 +36,8 @@ main {
     position: absolute;
     display: flex;
     flex-direction: column;
-    left: 220px;
-    top: 240px;
+    left: 10vw;
+    top: 25vh;
     height: auto;
     width: auto;
 }
@@ -55,31 +55,46 @@ main {
 
 .container_profil {
     position: relative;
-    width: 600px; /* Largeur du conteneur */
-    height: 600px; /* Hauteur du conteneur */
-    top: 300px;
-    left: 60%;
-    background-color: burlywood;
+    width: auto; 
+    height: 80vh; 
+    top: 10vh;
+    left: 50vw;
+    aspect-ratio: 13 / 16;
 }
 
-.container_profil  div{
+.container_profil  div {
+    aspect-ratio: 1 / 1;
     position: absolute;
     border-radius: 90%;
+    border: solid black 1px;
 }
 
 #little_circle { 
-    height: 300px;
-    width: 300px;
+    height: 36.5%;
+    width: auto;
+    background-color: #45D9FD;
+    left: 0;
+    bottom: 48%;
+    transform: translate(0, 50%);
 }
 
 #middle_circle { 
-    height: 200px;
-    width: 200px;
+    height: 49%;
+    width: auto;
+    background-color: #EE2560;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%);
 }
 
 #big_circle { 
-    height: 100px;
-    width: 100px;
+    background-image: url("./../../public/DSC03721.jpg");
+    background-size: cover;
+    background-position: 50%;
+    height: 65%;
+    width: auto;
+    top: 10%;
+    right: 0;
 }
 
 

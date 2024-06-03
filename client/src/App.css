@@ -4,16 +4,13 @@
 
 body { 
   background-color: #08182B;
-  top: 0;
-  right: 0;
   margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(to bottom right, #08182B 70%, #F4F4F4 );
 }
 
 #root {
-  background-color: #08182B;
-  top: 0;
-  right: 0;
-  margin: 0;
 }
 
 body {
