@@ -6,19 +6,21 @@ import { Headers } from './components/Header';
 import { PageHome } from './components/PageHome';
 import { PageCompetence } from './components/PageCompetence';
 import { PageContact } from './components/PageContact';
+// import { CirlceDecoration } from './components/CirlceDecoration'
 
 const App = () => {
-  return (
+  return ( <div className='flex flex-col h-[100vh] w-[100vw] overflow-x-hidden'>
     <Router>
-    <Headers />
-    <main>
+    <Headers/>
+    <main className='flex-1'>
       <Routes>
         <Route path="/" Component={PageHome} />
-        <Route path="/competence" element={<PageCompetence />} />
+        <Route path="/competences" element={<PageCompetence />} />
         <Route path="/contact" element={<PageContact />} />
       </Routes>
     </main>
   </Router>
+  </div>
 );
 }
 

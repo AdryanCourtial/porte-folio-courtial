@@ -7,7 +7,7 @@ body {
   margin: 0;
   min-height: 100vh;
   min-width: 100vw;
-  background: linear-gradient(to bottom right, #08182B 70%, #F4F4F4 );
+  overflow: hidden;
 }
 
 #root {
@@ -15,5 +15,8 @@ body {
 
 body {
   font-family: 'Inter', sans-serif;
+  overflow: hidden;
 }
+
+
 
