@@ -11,16 +11,17 @@ header {
     gap: 40px;
 }
 
+
 header button {
-    color: black;
-    text-decoration: none;
-    background-color: #F4F4F4;
+    color: white;
+    background-color: transparent;
     padding: 10px;
     border-radius: 20px;
-    border: none;
+    border: solid 1px #f4f4f4;
+    width: 95px;
 }
 
 header button :visited {
     text-decoration: none;
-    color: black;
+    color: white;
 }

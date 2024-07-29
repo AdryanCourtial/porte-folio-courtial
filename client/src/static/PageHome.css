@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    text-decoration: none;
 }
 
 main {
@@ -17,6 +18,19 @@ main {
     line-height: 150px;
 }
 
+.container_hr {
+    margin: 20px 0 30px 20px;
+}
+
+.container_hr hr{
+    box-shadow:
+    0 0 8px #EE2560,
+    inset 0 0 8px #EE2560,
+    0 0 16px #EE2560,
+    inset 0 0 16px #EE2560,
+    0 0 32px #EE2560,
+    inset 0 0 32px #EE2560; 
+}
 
 .bar_1 {
     color: #EE2560;
@@ -43,9 +57,6 @@ main {
 }
 
 
-.container_hr {
-    margin: 20px 0 30px 20px;
-}
 
 .emploie {
     position: relative;
