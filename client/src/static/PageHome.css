@@ -66,8 +66,8 @@ main {
 
 .container_profil {
     position: relative;
-    width: auto; 
-    height: 80vh; 
+    width: auto;
+    height: 80vh;
     top: 10vh;
     left: 50vw;
     aspect-ratio: 13 / 16;
@@ -89,7 +89,7 @@ main {
     transform: translate(0, 50%);
 }
 
-#middle_circle { 
+#middle_circle {
     height: 49%;
     width: auto;
     background-color: #EE2560;

@@ -6,6 +6,7 @@ import { Headers } from './components/Header';
 import { PageHome } from './components/PageHome';
 import { PageCompetence } from './components/PageCompetence';
 import { PageContact } from './components/PageContact';
+// import { CirlceDecoration } from './components/CirlceDecoration'
 import { useState } from 'react';
 
 // Ici mes Variants pour les swap de fenettre 
@@ -47,28 +48,18 @@ const pageVariantRight = {
 export const tabPage = ['/', '/competence', '/contact']
 
 const App = () => {
-  const [variant, setVariant] = useState(pageVariantLeft)
-
-  const ChooseVariants = (actualPage, nextPage) => {
-    if (nextPage > actualPage) {
-      setVariant(pageVariantRight)
-    } else if (nextPage < actualPage){
-      setVariant(pageVariantLeft)
-    }
-  }
-
-
   return (
     <Router>
-    <Headers OnChooseVariant={ChooseVariants}/> { /* Mon Header me renvoie si je clique sur un bouton : 1 l'index de ma route actuelle 2 L'index de la route ou je vais */}
+    <Headers />
     <main>
       <Routes>
-        <Route path="/" element={<PageHome animation={variant}/>} /> {/* Je lui envoie en fonction de ce que j'ai recup dans le Header le dans le sens convenue de transition */}
-        <Route path="/competence" element={<PageCompetence animation={variant}/>} />
-        <Route path="/contact" element={<PageContact animation={variant}/>} />
+        <Route path="/" Component={PageHome} />
+        <Route path="/competence" element={<PageCompetence />} />
+        <Route path="/contact" element={<PageContact />} />
       </Routes>
     </main>
   </Router>
+  </div>
 );
 }
 
