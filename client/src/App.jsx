@@ -1,12 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-// import { SideBarre } from './components/SideBarre'
-// import { ButtonSideBarre } from './components/ButtonSideBarre';
 import { Headers } from './components/Header';
 import { PageHome } from './components/PageHome';
 import { PageCompetence } from './components/PageCompetence';
 import { PageContact } from './components/PageContact';
-// import { CirlceDecoration } from './components/CirlceDecoration'
 import { useState } from 'react';
 
 // Ici mes Variants pour les swap de fenettre 
@@ -48,14 +45,25 @@ const pageVariantRight = {
 export const tabPage = ['/', '/competence', '/contact']
 
 const App = () => {
-  return (
+
+  const [variant, setVariant] = useState(pageVariantLeft)
+
+  const ChooseVariants = (actualPage, nextPage) => {
+    if (nextPage > actualPage) {
+      setVariant(pageVariantRight)
+    } else if (nextPage < actualPage){
+      setVariant(pageVariantLeft)
+    }
+  }
+  
+  return ( <div className='flex flex-col h-[100vh] w-[100vw] overflow-x-hidden'>
     <Router>
-    <Headers />
-    <main>
+    <Headers OnChooseVariant={ChooseVariants}/>
+    <main className='flex-1'>
       <Routes>
-        <Route path="/" Component={PageHome} />
-        <Route path="/competence" element={<PageCompetence />} />
-        <Route path="/contact" element={<PageContact />} />
+        <Route path="/" element={<PageHome animation={variant}/>} /> {/* Je lui envoie en fonction de ce que j'ai recup dans le Header le dans le sens convenue de transition */}
+        <Route path="/competence" element={<PageCompetence animation={variant}/>} />
+        <Route path="/contact" element={<PageContact animation={variant}/>} />
       </Routes>
     </main>
   </Router>

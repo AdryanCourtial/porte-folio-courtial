@@ -1,27 +1,9 @@
 import './../static/Header.css'
 import { NavLink, useLocation } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { tabPage } from '../App'
 import { useEffect, useState } from 'react'
-import { ButtonSideBarre } from './ButtonSideBarre'
 
 
-const buttonVariant = {
-    hidden: {
-        opacity: 0,
-    },
-    visible: {
-        opacity: 1,
-    },
-    hover: {
-        scale: 1.05,
-        boxShadow: "0px 0px 8px rgb(255, 255, 255)",
-        textShadow: "0px 0px 8px rgb(255, 255, 255)"
-    },
-    click: {
-        scale: 0.9
-    }
-}
 export function Headers({OnChooseVariant}) {
 
     const location = useLocation();
@@ -39,10 +21,27 @@ export function Headers({OnChooseVariant}) {
     }
 
     return (
-    <header>
-        <ButtonSideBarre buttonVariant={buttonVariant} path={"/"} name={"Home"} ButtonClicked={GetLocation} image={"/icon_home.png"}/>
-        <ButtonSideBarre buttonVariant={buttonVariant} path={"/competence"} name={"Competence"} ButtonClicked={GetLocation}  image={"/competence_icon.png"}/>
-        <ButtonSideBarre buttonVariant={buttonVariant} path={"/contact"} name={"Contact"} ButtonClicked={GetLocation}  image={"/contact_icon.png"}/>  
+    <header className='bg-my-white w-fit px-6 flex mx-auto mt-2 rounded-full min-h-[7vh]'>
+        <NavLink
+            to={'/'} 
+            name={"Home"} 
+            onClick={GetLocation} 
+            className={'px-4 h-full flex items-center underline underline-offset-8 decoration-secondary-color'}
+        > Home </NavLink>
+        <NavLink 
+            to={'/competence'}
+            name={"Competence"} 
+            onClick={GetLocation}  
+            image={"/competence_icon.png"}
+            className='px-4 h-full flex items-center'
+        > Competences </NavLink>
+        <NavLink 
+            to={'/contact'}
+            name={"Contact"} 
+            onClick={GetLocation}  
+            image={"/contact_icon.png"}
+            className='px-4 h-full flex items-center'
+        > Contact </NavLink>
     </header>
     )
 }
