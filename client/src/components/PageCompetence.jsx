@@ -1,9 +1,10 @@
 import React from "react"
 import { ButtonCompetence } from "./ButtonCompetence"
+import { CircleDecoration } from "./CircleDecoration"
 
 export function PageCompetence({animation}){
     return (
-        <div className=" mt-[30vh] mx-[15vw] flex flex-col ">
+        <div className=" mt-[30vh] mx-[15vw] flex flex-col">
             <ButtonCompetence
                 image={require(`./../image/vue.png`)}
                 gradient={'rgb(57,185,131) linear-gradient(312deg, rgba(57,185,131,1) 0%, rgba(52,73,94,1) 100%)'}
@@ -45,6 +46,11 @@ export function PageCompetence({animation}){
                 gradient={'rgb(55,118,171) linear-gradient(312deg, rgba(55,118,171,1) 0%, rgba(255,214,56,1) 100%)'}
                 position={'start'}
             />
+            <CircleDecoration size={'20vh'} top={'20vh'} left={'10vw'}/>
+            <CircleDecoration size={'15vh'} top={'32vh'} left={'45vw'}/>
+            <CircleDecoration size={'15vh'} top={'86vh'} left={'17vw'}/>
+            <CircleDecoration size={'60vh'} top={'-15vh'} left={'80vw'}/>
+            <CircleDecoration size={'50vh'} top={'56vh'} left={'63vw'}/>
         </div>
     )
 }

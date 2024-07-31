@@ -5,6 +5,7 @@ import { PageHome } from './components/PageHome';
 import { PageCompetence } from './components/PageCompetence';
 import { PageContact } from './components/PageContact';
 import { useState } from 'react';
+import { PageExperiences } from './components/PageExperience';
 
 // Ici mes Variants pour les swap de fenettre 
 // Un de gauche a droite et l'autre de droite a gauche
@@ -16,11 +17,11 @@ const pageVariantLeft = {
   visible: {
     x: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.3,
       type: 'linear'
     }
   },
-  exit: {
+  leave: {
     x: 2000
   }
 }
@@ -32,17 +33,17 @@ const pageVariantRight = {
   visible: {
     x: 0,
     transition: {
-      duration: 0.5,
+      duration: 0.3,
       type: 'linear'
     }
   },
-  exit: {
+  leave: {
     x: -2000
   }
 }
 
 
-export const tabPage = ['/', '/competence', '/contact']
+export const tabPage = ['/', '/competence', '/experiences',  '/contact']
 
 const App = () => {
 
@@ -63,6 +64,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<PageHome animation={variant}/>} /> {/* Je lui envoie en fonction de ce que j'ai recup dans le Header le dans le sens convenue de transition */}
         <Route path="/competence" element={<PageCompetence animation={variant}/>} />
+        <Route path="/experiences" element={<PageExperiences animation={variant}/>} />
         <Route path="/contact" element={<PageContact animation={variant}/>} />
       </Routes>
     </main>

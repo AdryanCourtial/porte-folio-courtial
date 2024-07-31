@@ -17,6 +17,7 @@ export function Headers({OnChooseVariant}) {
     function GetLocation(nextPage){
         const curentIndex = tabPage.findIndex(route => route === actualPage);
         const nextIndex = tabPage.findIndex(route => route === nextPage);
+        console.log(curentIndex, nextIndex)
         OnChooseVariant(curentIndex, nextIndex)
     }
 
@@ -25,21 +26,25 @@ export function Headers({OnChooseVariant}) {
         <NavLink
             to={'/'} 
             name={"Home"} 
-            onClick={GetLocation} 
+            onClick={GetLocation('/')} 
             className={'px-4 h-full flex items-center underline underline-offset-8 decoration-secondary-color'}
         > Home </NavLink>
         <NavLink 
             to={'/competence'}
             name={"Competence"} 
-            onClick={GetLocation}  
-            image={"/competence_icon.png"}
+            onClick={GetLocation('/competence')}  
             className='px-4 h-full flex items-center'
         > Competences </NavLink>
         <NavLink 
+            to={'/experiences'}
+            name={"Experiences"} 
+            onClick={GetLocation('/experiences')}  
+            className='px-4 h-full flex items-center'
+        > Experiences </NavLink>
+        <NavLink 
             to={'/contact'}
             name={"Contact"} 
-            onClick={GetLocation}  
-            image={"/contact_icon.png"}
+            onClick={GetLocation('/contact')}  
             className='px-4 h-full flex items-center'
         > Contact </NavLink>
     </header>

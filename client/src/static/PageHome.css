@@ -13,7 +13,6 @@ main {
 .name {
     font-size: 78px;
     height: auto;
-    width: 500px;
     color: #F4F4F4;
     line-height: 150px;
 }
@@ -47,13 +46,12 @@ main {
 }
 
 .container {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     left: 10vw;
     top: 25vh;
     height: auto;
-    width: auto;
 }
 
 
@@ -68,7 +66,7 @@ main {
     position: relative;
     width: auto;
     height: 80vh;
-    top: 10vh;
+    top: -50vh;
     left: 50vw;
     aspect-ratio: 13 / 16;
 }
