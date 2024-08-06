@@ -1,12 +1,12 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+// import { CircleDecoration } from './CircleDecoration'
 import './../static/PageHome.css'
-import { CircleDecoration } from './CircleDecoration'
 
 
 
 export function PageHome( {animation} ) {
-    return <motion.div variants={animation} initial="hidden" animate="visible" exit='leave'>
+    return <motion.div variants={animation} initial="hidden" animate="visible" exit='leave' className='max-h-[91vh]'>
         <div className='container w-[37vw]'>
             <h2 className='name w-full'> COURTIAL <br/>  Adryan </h2>
             <div className='container_hr w-full'>
