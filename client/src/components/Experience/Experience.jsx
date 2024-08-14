@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 export function Experience({date, name, image, position}) {
     return (
         <div className="h-[80vh] w-full flex gap-40 items-center justify-center">
@@ -7,7 +9,12 @@ export function Experience({date, name, image, position}) {
                 </div>
             </div>
             <div className={`bg-secondary-color h-[40vh] w-[20vw] rounded-2xl col-start-3 `}>
-                JE SUIS LA DIV
+            <NavLink
+                to={`/experiences/${name}`} 
+                name={"Home"} 
+                className={'px-4 h-full flex items-center underline underline-offset-8 decoration-secondary-color'}
+            > Home </NavLink>
+                { name }
             </div>
         </div>
     )
