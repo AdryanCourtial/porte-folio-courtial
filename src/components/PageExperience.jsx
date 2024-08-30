@@ -5,7 +5,7 @@ import { Experience } from "./Experience/Experience"
 export function PageExperiences({animation}) {
     return (
         <motion.div className="flex-col justify-center mt-1/4 w-full h-full mt-[20vh]" variants={animation} initial="hidden" animate="visible">
-            <Experience name={'PME-Partner'} />
+            <Experience name={'PME-Partner'} image={require(`./../image/pmePartner.jpg`)} />
             <Experience position={'right'} />
         </motion.div>
     )

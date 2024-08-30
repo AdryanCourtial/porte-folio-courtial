@@ -7,7 +7,7 @@ import { PageContact } from './components/PageContact';
 import { useState } from 'react';
 import { PageExperiences } from './components/PageExperience';
 import { CircleDecoration } from './components/CircleDecoration';
-import { LayoutExperience } from './components/Experience/LayoutExperience' 
+import { PagePMEP } from './components/Experience/PagePMEP' 
 
 // Ici mes Variants pour les swap de fenettre 
 // Un de gauche a droite et l'autre de droite a gauche
@@ -71,7 +71,7 @@ const App = () => {
             <Route path="/competence" element={<PageCompetence animation={variant}/>} />
             <Route path="/experiences" element={<PageExperiences animation={variant}/>} />
             <Route path="/contact" element={<PageContact animation={variant}/>} />
-            <Route path="/experiences/PME-Partner" element={<LayoutExperience />}  />
+            <Route path="/experiences/PME-Partner" element={<PagePMEP />}  />
           </Routes>
         </main>
       </div>
