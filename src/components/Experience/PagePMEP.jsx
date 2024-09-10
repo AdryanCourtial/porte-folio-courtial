@@ -15,8 +15,8 @@ export function PagePMEP() {
                 </div>
             </div>
             <div>
-                <div className={'flex-1'}>
-
+            <div className={'flex-1 flex flex-col justify-center items-center gap-8'}>
+                    <img src={require('./../../image/integration.webp')} alt="Pme-Partner"  className=' h-[40vh]'/>
                 </div>
                 <div className={'w-[40%]'}> 
                     <h1 className="text-start"> Intégration </h1>
@@ -69,11 +69,10 @@ export function PagePMEP() {
                 </div>
             </div>
             <div>
-                <div className={'flex-1 flex flex-col justify-center items-center'}>
-                <img src={require('./../../image/git2.jpg')} alt="Pme-Partner"  className=' h-[40vh]'/>
-                <img src={require('./../../image/rose.png')} alt="Pme-Partner"  className=' h-[15vh]'/>
-                <img src={require('./../../image/rose.png')} alt="Pme-Partner"  className=' h-[15vh]'/>
-
+                <div className={'flex-1 flex flex-col justify-center items-center gap-8'}>
+                    <img src={require('./../../image/git2.jpg')} alt="Pme-Partner"  className=' h-[40vh]'/>
+                    <img src={require('./../../image/rose2.png')} alt="Pme-Partner"  className=' h-[40vh]'/>
+                    <img src={require('./../../image/scraping.webp')} alt="Pme-Partner"  className=' h-[40vh]'/>
                 </div>
                 <div className={'w-[40%]'}> 
                     <h1 className="text-start"> Compétence Acquises </h1>
@@ -115,10 +114,13 @@ export function PagePMEP() {
             <div>
                 <div className={'w-[40%]'}> 
                     <h1 className="text-start"> Conclusion </h1>
-                    <p></p>
+                    <p>                Ces trois mois de stage chez PME-Partner ont été une expérience riche tant sur le plan technique que personnel. J’ai pu m’immerger dans le quotidien d’un développeur full stack, en m’attaquant à des missions concrètes et variées, allant de la résolution de bugs à l’ajout de nouvelles fonctionnalités, en passant par la gestion de l’hébergement et la mise en place du scraping de données. Cette immersion m'a permis de prendre la mesure des exigences du métier, tout en renforçant mes compétences sur des technologies comme Vue.js, Laravel ou encore Tailwind, que j'avais seulement abordées en surface avant mon arrivée. <br />
+
+J’ai aussi découvert l’importance de la collaboration au sein d’une équipe, même lorsqu’elle est réduite et en partie absente à mon arrivée. Florian et Lucas m’ont rapidement intégré et guidé à travers les différentes étapes de mes missions, me permettant ainsi de progresser rapidement. Travailler en autonomie tout en bénéficiant de leur support a été très formateur et m'a aidé à mieux comprendre les enjeux de la gestion d’un projet de bout en bout. <br /> <br />
+
+En résumé, ce stage a solidifié mes bases en développement web et m’a surtout montré l’importance de rester adaptable et curieux, des qualités essentielles pour évoluer dans ce domaine en perpétuelle évolution. Je ressors de cette expérience avec une plus grande confiance en mes capacités et une vision plus claire de la direction que je souhaite prendre pour la suite de mon parcours, notamment dans le cadre de l’alternance à venir chez PME-Partner.</p>
                 </div>
                 <div className={'flex-1'}>
-
                 </div>
             </div>
         </div>
