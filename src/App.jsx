@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { PageExperiences } from './components/PageExperience';
 import { CircleDecoration } from './components/CircleDecoration';
 import { PagePMEP } from './components/Experience/PagePMEP' 
+import { PageCv } from './components/PageCv';
 
 // Ici mes Variants pour les swap de fenettre 
 // Un de gauche a droite et l'autre de droite a gauche
@@ -45,7 +46,7 @@ const pageVariantRight = {
 }
 
 
-export const tabPage = ['/', '/competence', '/experiences',  '/contact']
+export const tabPage = ['/', '/competence', '/experiences',  '/contact', '/cv']
 
 
 
@@ -71,6 +72,7 @@ const App = () => {
             <Route path="/competence" element={<PageCompetence animation={variant}/>} />
             <Route path="/experiences" element={<PageExperiences animation={variant}/>} />
             <Route path="/contact" element={<PageContact animation={variant}/>} />
+            <Route path="/cv" element={<PageCv animation={variant}/>} />
             <Route path="/experiences/PME-Partner" element={<PagePMEP />}  />
           </Routes>
         </main>

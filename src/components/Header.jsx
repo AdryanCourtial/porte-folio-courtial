@@ -47,6 +47,12 @@ export function Headers({OnChooseVariant}) {
             onClick={() => GetLocation('/contact')}  
             className='px-4 h-full flex items-center'
         > Contact </NavLink>
+                <NavLink 
+            to={'/cv'}
+            name={"cv"} 
+            onClick={() => GetLocation('/cv')}  
+            className='px-4 h-full flex items-center'
+        > CV </NavLink>
     </header>
     )
 }
